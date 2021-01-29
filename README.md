@@ -21,3 +21,19 @@ None, None, [[]], [[['51171d70a5b6c2485a24361038890141', 'zh_en_2020q2.md']]]], 
 容词', [['relating to China or its language, culture, or people.', 'm_en_gbus0177150.005']], 'Chinese'], ['名词', [['the Sino-Tibetan language of China.', 'm_en_gbus0177150.010'], ['a native or inhabitant of China, or a person of Chinese
 descent.', 'm_en_gbus0177150.013']], 'Chinese']]]
 ```
+
+`print(cn_to_en("COVID-19 终将被战胜"))`
+```
+[[['COVID-19 will eventually be defeated', 'COVID-19 终将被战胜', None, None, 3, None, None, [[]], [[['51171d70a5b6c2485a24361038890141', 'zh_en_2020q2.md']]]], [None, None, None, 'COVID-19 zhōng jiāng bèi zhànshèng']], None, 'zh-CN', None, None, [['COVID-19 终将被战胜',
+None, [['COVID-19 will eventually
+be defeated', 0, True, False], ['COVID-19 will eventually be overcome', 0, True, False]], [[0, 14]], 'COVID-19 终将被战胜', 0, 0]], 1.0, [], [['zh-CN'], None, [1.0], ['zh-CN']]]
+```
+
+`print(en_to_cn("COVID-19 will eventually be defeated"))`
+
+```
+[[['COVID-19最终将被击败', 'COVID-19 will eventually be defeated', None, None, 3, None, None, [[]], [[['b3ad15e7a0073e77814019b341d18493', 'en_zh_2019q3.md']]]], [None, None, 'COVID-19 zuìzhōng jiāng bèi
+jíbài']], None, 'en', None, None,
+[['COVID-19 will eventually be defeated', None, [['COVID-19最终将被
+击败', 0, True, False], ['COVID-19最终将被打败', 0, True, False]], [[0, 36]], 'COVID-19 will eventually be defeated', 0, 0]], 1.0, [], [['en'], None, [1.0], ['en']]]
+```
