@@ -4,9 +4,12 @@
 ## 一些示例
 `print(cn_to_en("中文"))`
 ```
-[[['Haha', '哈哈', None, None, 3,
-None, None, [[]], [[['51171d70a5b6c2485a24361038890141', 'zh_en_2020q2.md']]]], [None, None, None, 'Hāhā']], None, 'zh-CN', None, None,
-[['哈哈', None, [['Haha', 0, True, False]], [[0, 2]], '哈哈', 0, 0]], 1.0, [], [['zh-CN'], None, [1.0], ['zh-CN']]]
+[[['Chinese', '中文', None, None,
+2], [None, None, None, 'Zhōngwén']], [['名词', ['Chinese'], [['Chinese', ['中文', '汉语', '华人', '华
+语', '汉'], None, 0.56094915]], '
+中文', 1]], 'zh-CN', None, None, [['中文', None, [['Chinese', 1000,
+True, False]], [[0, 2]], '中文', 0, 0]], 0.58841187, [], [['zh-CN',
+'ja'], None, [0.58841187, 0.41158813], ['zh-CN', 'ja']]]
 ```
 
 `print(en_to_cn("chinese"))`
