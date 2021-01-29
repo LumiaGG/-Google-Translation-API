@@ -96,18 +96,18 @@ def buildUrl(content, tk, tl):
         return baseUrl
 
 def en_to_cn(txt):
-        tl = "zh-CN"
-        tk = TL(txt)
+    tl = "zh-CN"  # tl is the target language 
+    tk = TL(txt)
 
-        content = urllib.parse.quote(txt)
-        url = buildUrl(content, tk, tl)
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0'}
-        r = requests.get(url,headers=headers,timeout=3)
-        r_json = json.loads(r.text)
-        return r_json
+    content = urllib.parse.quote(txt)
+    url = buildUrl(content, tk, tl)
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0'}
+    r = requests.get(url,headers=headers,timeout=3)
+    r_json = json.loads(r.text)
+    return r_json
 
 def cn_to_en(txt):
-        tl = "en"
+        tl = "en" # tl is the target language 
         tk = TL(txt)
 
         content = urllib.parse.quote(txt)
@@ -119,5 +119,5 @@ def cn_to_en(txt):
 
 
 
-print(cn_to_en("中文"))
-print(en_to_cn("chinese"))
+print(cn_to_en("COVID-19 终将被战胜"))
+print(en_to_cn("COVID-19 will eventually be defeated"))
